@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>이벤트 참여 페이지</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- GTM 코드 삽입: GTM-XXXXXXX 부분을 자신의 ID로 교체 -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX'); // ← 여기에 본인 GTM ID 입력
+  </script>
+
+  <style>
+    body {
+      font-family: '맑은 고딕', sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #333;
+    }
+    .btn {
+      background-color: #007bff;
+      border: none;
+      color: white;
+      padding: 14px 28px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    select {
+      margin-top: 30px;
+      font-size: 16px;
+      padding: 10px;
+    }
+    .share-buttons {
+      margin-top: 40px;
+    }
+    .share-buttons a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #007bff;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 한정 특가 이벤트 🎉</h1>
+  <p>지금 참여하고 할인 혜택을 받아보세요!</p>
+
+  <button class="btn" id="join-sale">✅ 참여하기</button>
+
+  <div>
+    <h3>관심 있는 상품 분야를 선택해주세요:</h3>
+    <select id="interest-select">
+      <option value="">-- 선택하세요 --</option>
+      <option value="electronics">전자제품</option>
+      <option value="fashion">패션</option>
+      <option value="home">홈 & 리빙</option>
+    </select>
+  </div>
+
+  <div class="share-buttons">
+    <h3>친구에게 공유하기:</h3>
+    <a href="#" id="share-facebook">📘 페이스북</a>
+    <a href="#" id="share-twitter">🐦 트위터</a>
+  </div>
+
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+</body>
+</html>
